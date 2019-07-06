@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var service = MoviesService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        service.fetchMovies { (result) in
+            print(result)
+        }
     }
 
 

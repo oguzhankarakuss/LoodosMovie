@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct MoviePresentation {
+    let title: String
+    let detail: String
+}
+
+extension MoviePresentation{
+    init(search: SearchElement) {
+        self.init(title: search.title, detail: search.year)
+    }
+}

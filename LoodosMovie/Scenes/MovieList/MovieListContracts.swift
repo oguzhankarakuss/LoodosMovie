@@ -8,11 +8,12 @@
 
 import Foundation
 
-struct MoviePresentation {
-    let title: String
-    let detail: String
+protocol MovieListViewProtocol {
+    var delegate: MovieListViewDelegate? { get set }
+    func updateMovieList(_ movieList: [MoviePresentation])
+    func setLoading(_ isLoading: Bool)
 }
 
-protocol MovieListViewProtocol {
-    func updateMovieList(_ movieList: [MoviePresentation])
+protocol MovieListViewDelegate: class {
+    func didSelectMovie(at index: Int)
 }

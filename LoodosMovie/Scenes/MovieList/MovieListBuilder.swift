@@ -6,4 +6,14 @@
 //  Copyright © 2019 Oğuzhan Karakuş. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+final class MovieListBuilder{
+    
+    static func make() -> MovieListViewController{
+        let storyboard = UIStoryboard(name: "MovieList", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "MovieListViewController") as! MovieListViewController
+        viewController.service = app.service
+        return viewController
+    }
+}

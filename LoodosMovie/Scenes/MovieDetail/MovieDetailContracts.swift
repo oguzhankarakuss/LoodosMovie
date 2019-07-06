@@ -8,4 +8,6 @@
 
 import Foundation
 
-
+protocol MovieDetailViewProtocol {
+    func updateMovieDetail(_ movieDetail: MovieDetailPresentation)
+}
