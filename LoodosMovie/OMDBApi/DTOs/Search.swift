@@ -23,7 +23,7 @@ public struct Search: Decodable {
 // MARK: - SearchElement
 public struct SearchElement: Decodable {
     public let title, year, imdbID: String
-     let type: TypeEnum
+     let type: TypeEnum?
     public let poster: String
     
     enum CodingKeys: String, CodingKey {

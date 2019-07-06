@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 
 protocol MoviesServiceProtocol {
-    func fetchMovies(completion: @escaping (Result<Search>) -> Void)
-    func fetchMovieDetail(completion: @escaping (Result<Movie>) -> Void)
+    func fetchMovies(searchName: String, page: Int, completion: @escaping (Result<Search>) -> Void)
+    func fetchMovieDetail(movieTitle: String, completion: @escaping (Result<Movie>) -> Void)
 }
 
 class MoviesService: MoviesServiceProtocol{
@@ -23,10 +23,16 @@ class MoviesService: MoviesServiceProtocol{
     
     public init() { }
     
-    func fetchMovies(completion: @escaping (Result<Search>) -> Void){
-        let asd = Parameters.parameter
-        let urlString = "https://www.omdbapi.com/?s=batman&apikey=a145db2f" //tt0103359
-        AF.request(urlString).responseData { (response) in
+    func fetchMovies(searchName: String, page: Int, completion: @escaping (Result<Search>) -> Void){
+        let queryParams: [String: String] = [
+            "s": searchName,
+            "type": "movie",
+            "page": "\(page)",
+            "apikey": Constants.API_KEY
+        ]
+        let url = Helper.makeUrl(path: "/", queryItems: queryParams)
+        
+        AF.request(url).responseData { (response) in
             switch response.result{
             case .success(let data):
                 do{
@@ -42,9 +48,14 @@ class MoviesService: MoviesServiceProtocol{
         
     }
     
-    func fetchMovieDetail(completion: @escaping (Result<Movie>) -> Void) {
-        let urlString = "https://www.omdbapi.com/?i=tt0103359&apikey=a145db2f" //tt0103359
-        AF.request(urlString).responseData { (response) in
+    func fetchMovieDetail(movieTitle: String, completion: @escaping (Result<Movie>) -> Void) {
+        let queryParams: [String: String] = [
+            "t": movieTitle,
+            "apikey": Constants.API_KEY
+        ]
+        let url = Helper.makeUrl(path: "/", queryItems: queryParams)
+        
+        AF.request(url).responseData { (response) in
             switch response.result{
             case .success(let data):
                 do{

@@ -11,15 +11,17 @@ import UIKit
 final class MovieDetailViewController: UIViewController{
     
     @IBOutlet var customView: MovieDetailView!
-    var imdbID: String?
+    var movieTitle: String?
     var movie: Movie!
     var service = MoviesService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = movieTitle
+        
         customView.setLoading(true)
-        service.fetchMovieDetail{ [weak self] result in
+        service.fetchMovieDetail(movieTitle: movieTitle!){ [weak self] result in
             guard let self = self else { return }
             
             switch result {

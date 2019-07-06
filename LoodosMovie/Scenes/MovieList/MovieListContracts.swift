@@ -10,10 +10,11 @@ import Foundation
 
 protocol MovieListViewProtocol {
     var delegate: MovieListViewDelegate? { get set }
-    func updateMovieList(_ movieList: [MoviePresentation])
+    func updateMovieList(_ movieList: [MoviePresentation], totalResults: String, page: Int)
     func setLoading(_ isLoading: Bool)
 }
 
 protocol MovieListViewDelegate: class {
-    func didSelectMovie(at index: Int)
+    func didSelectMovie(at movieTitle: String)
+    func sendRequest(at searchName: String, page: Int)
 }

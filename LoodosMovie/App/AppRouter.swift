@@ -17,7 +17,7 @@ final class AppRouter{
     }
     
     func start(){
-        let viewController = MovieListBuilder.make()
+        let viewController = SplashBuilder.make()
         let navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

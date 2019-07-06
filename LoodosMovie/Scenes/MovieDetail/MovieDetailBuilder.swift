@@ -10,11 +10,11 @@ import UIKit
 
 final class MovieDetailBuilder{
 
-static func make(with imdbID: String) -> MovieDetailViewController {
+static func make(with movieTitle: String) -> MovieDetailViewController {
     
     let storyboard = UIStoryboard(name: "MovieDetail", bundle: nil)
     let viewController = storyboard.instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
-    viewController.imdbID = imdbID
+    viewController.movieTitle = movieTitle
     return viewController
     }
 }

@@ -7,23 +7,40 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class MovieListView: UIView{
     
     weak var delegate: MovieListViewDelegate?
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var searchField: UITextField!
+    @IBOutlet private weak var searchBtn: UIButton!
     private var movieList: [MoviePresentation] = []
+    private var totalResults: Int!
+    private var page = 1
+    
+    @IBAction private func searchButtonTapped(_ sender: UIButton){
+        loadTable()
+    }
     
 }
 
 extension MovieListView: MovieListViewProtocol{
-    func updateMovieList(_ movieList: [MoviePresentation]) {
-        self.movieList = movieList
+    func updateMovieList(_ movieList: [MoviePresentation], totalResults: String, page: Int) {
+        self.movieList.append(contentsOf: movieList)
+        self.totalResults = Int(totalResults)
+        self.page = page
         tableView.reloadData()
     }
     
     func setLoading(_ isLoading: Bool){
         UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+    }
+    
+    @objc func loadTable(){
+        guard let text = searchField.text, text.count > 2 else { return }
+        delegate?.sendRequest(at: text, page: page)
+        print("giriyo page: \(page)")
     }
 }
 
@@ -33,18 +50,37 @@ extension MovieListView: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieListCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieListCell", for: indexPath) as! MovieListTableViewCell
         let movie = movieList[indexPath.row]
-        cell.textLabel?.text = movie.title
-        cell.detailTextLabel?.text = movie.detail
+        cell.activityView.startAnimating()
+        cell.titleLbl?.text = movie.title
+        cell.subtitleLbl?.text = movie.detail
+        cell.movieImageView.kf.setImage(with: URL(string: movie.image)){ result in
+            switch result{
+            case .success( _):
+                    cell.activityView.stopAnimating()
+            case .failure(let error):
+                print("KF: \(error)")
+                cell.activityView.stopAnimating()
+                cell.movieImageView.image = UIImage(named: "no_img")
+            }}
+
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row > movieList.count - 2 {
+            if movieList.count < totalResults{
+                self.perform(#selector(loadTable), with: nil, afterDelay: 1.0)
+            }
+        }
+    }
     
 }
 
 extension MovieListView: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.didSelectMovie(at: indexPath.row)
+        delegate?.didSelectMovie(at: movieList[indexPath.row].title)
     }
 }

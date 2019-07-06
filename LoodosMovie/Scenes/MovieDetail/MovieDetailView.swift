@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class MovieDetailView: UIView{
     
@@ -21,17 +22,35 @@ final class MovieDetailView: UIView{
     @IBOutlet private weak var directorLbl: UILabel!
     @IBOutlet private weak var writerLbl: UILabel!
     @IBOutlet private weak var runtimeLbl: UILabel!
-    @IBOutlet private weak var imageLbl: UILabel!
+    @IBOutlet private weak var posterImageView: UIImageView!
     
     func setLoading(_ isLoading: Bool){
         UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+    }
+    
+    func setActivityIndicator() -> UIActivityIndicatorView{
+        let ac = UIActivityIndicatorView(style: .whiteLarge)
+        ac.color = .gray
+        return ac
     }
     
 }
 
 extension MovieDetailView: MovieDetailViewProtocol{
     func updateMovieDetail(_ movieDetail: MovieDetailPresentation) {
+        
+        let activityView = setActivityIndicator()
+        
         titleLbl.text = movieDetail.title
         releasedLbl.text = movieDetail.released
+        posterImageView.kf.setImage(with: movieDetail.image){ result in
+            switch result{
+            case .success( _):
+                activityView.stopAnimating()
+            case .failure(let error):
+                print("KF: \(error)")
+                activityView.stopAnimating()
+                self.posterImageView.image = UIImage(named: "no_img")
+            }}
     }
 }
