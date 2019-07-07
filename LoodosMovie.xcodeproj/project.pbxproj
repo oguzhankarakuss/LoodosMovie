@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3338CB5522CE69B600DB76C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338CB5422CE69B600DB76C1 /* AppDelegate.swift */; };
-		3338CB5C22CE69B700DB76C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3338CB5B22CE69B700DB76C1 /* Assets.xcassets */; };
 		3338CB6C22CE6D1D00DB76C1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338CB6B22CE6D1D00DB76C1 /* Movie.swift */; };
 		3338CB6E22CE6D5700DB76C1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338CB6D22CE6D5700DB76C1 /* Result.swift */; };
 		3338CB7022CE6DB000DB76C1 /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338CB6F22CE6DB000DB76C1 /* MoviesService.swift */; };
@@ -33,13 +32,21 @@
 		33CB6EF522D1532500A76E0C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6EF422D1532500A76E0C /* SplashViewController.swift */; };
 		33CB6EF722D1535C00A76E0C /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CB6EF622D1535C00A76E0C /* Splash.storyboard */; };
 		33CB6EFB22D1545800A76E0C /* SpashBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6EFA22D1545800A76E0C /* SpashBuilder.swift */; };
+		33CB6F0122D1F7AC00A76E0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33CB6F0022D1F7AB00A76E0C /* GoogleService-Info.plist */; };
+		33CB6F0422D210E600A76E0C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F0322D210E600A76E0C /* SplashView.swift */; };
+		33CB6F0622D2117200A76E0C /* SplashContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F0522D2117200A76E0C /* SplashContracts.swift */; };
+		33CB6F0822D221BF00A76E0C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CB6F0722D221BF00A76E0C /* AdSupport.framework */; };
+		33CB6F0B22D25A2D00A76E0C /* InfinitySymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F0A22D25A2D00A76E0C /* InfinitySymbolView.swift */; };
+		33CB6F0F22D2844100A76E0C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F0E22D2844100A76E0C /* UIView+Extension.swift */; };
+		33CB6F1122D2857400A76E0C /* UIColor+HexRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F1022D2857400A76E0C /* UIColor+HexRGB.swift */; };
+		33CB6F1322D28A1900A76E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CB6F1222D28A1900A76E0C /* Assets.xcassets */; };
+		33CB6F1522D2984800A76E0C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F1422D2984800A76E0C /* CustomLabel.swift */; };
 		D101DD0FFFB974F7264E83F6 /* Pods_LoodosMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50F8B9BA3AC50E425138DB9 /* Pods_LoodosMovie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3338CB5122CE69B600DB76C1 /* LoodosMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3338CB5422CE69B600DB76C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3338CB5B22CE69B700DB76C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3338CB6022CE69B700DB76C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3338CB6B22CE6D1D00DB76C1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		3338CB6D22CE6D5700DB76C1 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -65,6 +72,16 @@
 		33CB6EF422D1532500A76E0C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		33CB6EF622D1535C00A76E0C /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		33CB6EFA22D1545800A76E0C /* SpashBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashBuilder.swift; sourceTree = "<group>"; };
+		33CB6F0022D1F7AB00A76E0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		33CB6F0222D1FAA200A76E0C /* LoodosMovie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoodosMovie.entitlements; sourceTree = "<group>"; };
+		33CB6F0322D210E600A76E0C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		33CB6F0522D2117200A76E0C /* SplashContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContracts.swift; sourceTree = "<group>"; };
+		33CB6F0722D221BF00A76E0C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		33CB6F0A22D25A2D00A76E0C /* InfinitySymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitySymbolView.swift; sourceTree = "<group>"; };
+		33CB6F0E22D2844100A76E0C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		33CB6F1022D2857400A76E0C /* UIColor+HexRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexRGB.swift"; sourceTree = "<group>"; };
+		33CB6F1222D28A1900A76E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		33CB6F1422D2984800A76E0C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		3C74EA3FF89CAC6A2DD7F7C1 /* Pods-LoodosMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoodosMovie/Pods-LoodosMovie.release.xcconfig"; sourceTree = "<group>"; };
 		6C5B0CB9435FFEDBE617E329 /* Pods-LoodosMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoodosMovie/Pods-LoodosMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		F50F8B9BA3AC50E425138DB9 /* Pods_LoodosMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CB6F0822D221BF00A76E0C /* AdSupport.framework in Frameworks */,
 				D101DD0FFFB974F7264E83F6 /* Pods_LoodosMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +103,7 @@
 		2F08B77443C8F2CC7FBAAE54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33CB6F0722D221BF00A76E0C /* AdSupport.framework */,
 				F50F8B9BA3AC50E425138DB9 /* Pods_LoodosMovie.framework */,
 			);
 			name = Frameworks;
@@ -111,9 +130,12 @@
 		3338CB5322CE69B600DB76C1 /* LoodosMovie */ = {
 			isa = PBXGroup;
 			children = (
+				33CB6F0222D1FAA200A76E0C /* LoodosMovie.entitlements */,
+				33CB6F0022D1F7AB00A76E0C /* GoogleService-Info.plist */,
 				3338CB7122CE821800DB76C1 /* App */,
 				3338CB7322CE827500DB76C1 /* Scenes */,
 				3338CB6622CE6C7E00DB76C1 /* Resources */,
+				33CB6F0D22D283BB00A76E0C /* Extensions */,
 				3338CB7222CE824A00DB76C1 /* Supporting Files */,
 				3338CB6722CE6CAF00DB76C1 /* OMDBApi */,
 			);
@@ -123,7 +145,7 @@
 		3338CB6622CE6C7E00DB76C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3338CB5B22CE69B700DB76C1 /* Assets.xcassets */,
+				33CB6F1222D28A1900A76E0C /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -188,9 +210,12 @@
 		3338CB7422CE82BD00DB76C1 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				33CB6F0322D210E600A76E0C /* SplashView.swift */,
 				33CB6EF422D1532500A76E0C /* SplashViewController.swift */,
-				33CB6EF622D1535C00A76E0C /* Splash.storyboard */,
 				33CB6EFA22D1545800A76E0C /* SpashBuilder.swift */,
+				33CB6EF622D1535C00A76E0C /* Splash.storyboard */,
+				33CB6F0522D2117200A76E0C /* SplashContracts.swift */,
+				33CB6F0A22D25A2D00A76E0C /* InfinitySymbolView.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -220,6 +245,16 @@
 				3338CB9522D0CCC700DB76C1 /* MovieDetailBuilder.swift */,
 			);
 			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		33CB6F0D22D283BB00A76E0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33CB6F0E22D2844100A76E0C /* UIView+Extension.swift */,
+				33CB6F1022D2857400A76E0C /* UIColor+HexRGB.swift */,
+				33CB6F1422D2984800A76E0C /* CustomLabel.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		71E9AA2026DE402FAF6149AB /* Pods */ = {
@@ -265,6 +300,11 @@
 				TargetAttributes = {
 					3338CB5022CE69B600DB76C1 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -292,9 +332,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3338CB9022D0CA0900DB76C1 /* MovieDetail.storyboard in Resources */,
-				3338CB5C22CE69B700DB76C1 /* Assets.xcassets in Resources */,
+				33CB6F0122D1F7AC00A76E0C /* GoogleService-Info.plist in Resources */,
 				3338CB7922CE864900DB76C1 /* MovieList.storyboard in Resources */,
 				33CB6EF722D1535C00A76E0C /* Splash.storyboard in Resources */,
+				33CB6F1322D28A1900A76E0C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,16 +352,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LoodosMovie/Pods-LoodosMovie-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -359,20 +408,26 @@
 				3338CB7F22CE971200DB76C1 /* Search.swift in Sources */,
 				3338CB9A22D0E5EC00DB76C1 /* Constants.swift in Sources */,
 				3338CB7722CE85AC00DB76C1 /* MovieListContracts.swift in Sources */,
+				33CB6F1522D2984800A76E0C /* CustomLabel.swift in Sources */,
 				3338CB7B22CE8BF100DB76C1 /* MovieListView.swift in Sources */,
+				33CB6F0622D2117200A76E0C /* SplashContracts.swift in Sources */,
 				3338CB8922D0B05C00DB76C1 /* MovieListBuilder.swift in Sources */,
+				33CB6F1122D2857400A76E0C /* UIColor+HexRGB.swift in Sources */,
 				3338CB9622D0CCC700DB76C1 /* MovieDetailBuilder.swift in Sources */,
+				33CB6F0B22D25A2D00A76E0C /* InfinitySymbolView.swift in Sources */,
 				3338CB9822D0E5DE00DB76C1 /* Helper.swift in Sources */,
 				3338CB7D22CE916700DB76C1 /* MovieListViewController.swift in Sources */,
 				3338CB8522D0ADFF00DB76C1 /* AppContainer.swift in Sources */,
 				3338CB8E22D0C8B000DB76C1 /* MovieDetailPresentation.swift in Sources */,
 				3338CB8C22D0C7B100DB76C1 /* MovieDetailContracts.swift in Sources */,
 				3338CB5522CE69B600DB76C1 /* AppDelegate.swift in Sources */,
+				33CB6F0F22D2844100A76E0C /* UIView+Extension.swift in Sources */,
 				33CB6EF522D1532500A76E0C /* SplashViewController.swift in Sources */,
 				3338CB6E22CE6D5700DB76C1 /* Result.swift in Sources */,
 				3338CB6C22CE6D1D00DB76C1 /* Movie.swift in Sources */,
 				33CB6EFB22D1545800A76E0C /* SpashBuilder.swift in Sources */,
 				3338CB8722D0AE4800DB76C1 /* AppRouter.swift in Sources */,
+				33CB6F0422D210E600A76E0C /* SplashView.swift in Sources */,
 				3338CB9222D0CABE00DB76C1 /* MovieDetailView.swift in Sources */,
 				3338CB8322D09D5100DB76C1 /* MoviePresentation.swift in Sources */,
 				3338CB9422D0CC7000DB76C1 /* MovieDetailViewController.swift in Sources */,
@@ -505,6 +560,7 @@
 			baseConfigurationReference = 6C5B0CB9435FFEDBE617E329 /* Pods-LoodosMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoodosMovie/LoodosMovie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FK3B5GZ3NR;
 				INFOPLIST_FILE = "$(SRCROOT)/LoodosMovie/Supporting Files/Info.plist";
@@ -524,6 +580,7 @@
 			baseConfigurationReference = 3C74EA3FF89CAC6A2DD7F7C1 /* Pods-LoodosMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoodosMovie/LoodosMovie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FK3B5GZ3NR;
 				INFOPLIST_FILE = "$(SRCROOT)/LoodosMovie/Supporting Files/Info.plist";

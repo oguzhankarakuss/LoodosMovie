@@ -18,85 +18,233 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="lJj-RU-2KX">
-                                <rect key="frame" x="87" y="194.5" width="240" height="507.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKN-SW-7VJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WHP-pB-Ll3">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwi-iV-fZY">
-                                        <rect key="frame" x="0.0" y="142" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdf-aw-0b9">
-                                        <rect key="frame" x="0.0" y="176.5" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDf-MP-u5R">
-                                        <rect key="frame" x="0.0" y="211" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yz-31-nZ9">
-                                        <rect key="frame" x="0.0" y="245.5" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6n-xp-TXC">
-                                        <rect key="frame" x="0.0" y="280" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eha-eI-4yg">
-                                        <rect key="frame" x="0.0" y="314.5" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUv-Lk-GTc">
-                                        <rect key="frame" x="0.0" y="349" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ta-L3-CiD">
-                                        <rect key="frame" x="0.0" y="383.5" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLZ-4C-Aof">
-                                        <rect key="frame" x="0.0" y="418" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMz-n7-mTn">
-                                        <rect key="frame" x="0.0" y="452.5" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5b-gu-OPX">
-                                        <rect key="frame" x="0.0" y="487" width="240" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzv-ae-RPI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="634"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WHP-pB-Ll3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="eKG-fD-Emv"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaH-HD-f4f">
+                                                <rect key="frame" x="0.0" y="124" width="414" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V2f-dl-9g9">
+                                                        <rect key="frame" x="8" y="0.0" width="140" height="180"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="b3j-As-5xo"/>
+                                                            <constraint firstAttribute="height" constant="180" id="lzQ-uQ-Rip"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="S3S-AK-nmH">
+                                                        <rect key="frame" x="160" y="90" width="234" height="90"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhD-Yr-jVO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="44.5"/>
+                                                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEb-V2-vJ7">
+                                                                <rect key="frame" x="0.0" y="50.5" width="39" height="39.5"/>
+                                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="16"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="S3S-AK-nmH" firstAttribute="leading" secondItem="V2f-dl-9g9" secondAttribute="trailing" constant="12" id="6Ci-dX-mmw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="S3S-AK-nmH" secondAttribute="trailing" constant="20" id="AWJ-kB-qe5"/>
+                                                    <constraint firstAttribute="height" constant="180" id="KXd-Pq-wVp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="S3S-AK-nmH" secondAttribute="bottom" id="Yix-BB-VCO"/>
+                                                    <constraint firstItem="S3S-AK-nmH" firstAttribute="centerY" secondItem="V2f-dl-9g9" secondAttribute="centerY" multiplier="1.5" id="h2p-0N-8Xz"/>
+                                                    <constraint firstItem="V2f-dl-9g9" firstAttribute="top" secondItem="iaH-HD-f4f" secondAttribute="top" id="oWH-53-Vjn"/>
+                                                    <constraint firstItem="V2f-dl-9g9" firstAttribute="leading" secondItem="iaH-HD-f4f" secondAttribute="leading" constant="8" id="plD-bC-Xge"/>
+                                                    <constraint firstAttribute="bottom" secondItem="V2f-dl-9g9" secondAttribute="bottom" id="sIY-hw-dol"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8B-jE-RUt">
+                                                <rect key="frame" x="14" y="324" width="386" height="280"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lJj-RU-2KX">
+                                                        <rect key="frame" x="10" y="10" width="366" height="260"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eh8-ID-i7R">
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="17"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDB Rating: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfZ-Ag-t3X" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="17"/>
+                                                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6n-xp-TXC" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="185" y="0.0" width="181" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="pfq-Uw-Ufo">
+                                                                <rect key="frame" x="0.0" y="37" width="366" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfN-J8-6Cr" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yz-31-nZ9" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="185" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dBl-ov-ALE">
+                                                                <rect key="frame" x="0.0" y="77.5" width="366" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actors: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04p-To-20E" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwi-iV-fZY" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="185" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GLu-Ar-ZQc">
+                                                                <rect key="frame" x="0.0" y="118" width="366" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEU-Fo-GUW" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDf-MP-u5R" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="185" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jFy-Eg-nvA">
+                                                                <rect key="frame" x="0.0" y="158.5" width="366" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lg-fR-oaY" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdf-aw-0b9" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="185" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iN5-xJ-bFg">
+                                                                <rect key="frame" x="0.0" y="199" width="366" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhn-cb-aD0" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eha-eI-4yg" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="185" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="70O-lm-2p5">
+                                                                <rect key="frame" x="0.0" y="239.5" width="366" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runtime: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpb-yJ-Z0n" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLZ-4C-Aof" customClass="CustomLabel" customModule="LoodosMovie" customModuleProvider="target">
+                                                                        <rect key="frame" x="185" y="0.0" width="181" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="lJj-RU-2KX" secondAttribute="trailing" constant="10" id="5p1-bX-xns"/>
+                                                    <constraint firstItem="lJj-RU-2KX" firstAttribute="leading" secondItem="y8B-jE-RUt" secondAttribute="leading" constant="10" id="Aui-tT-dzY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lJj-RU-2KX" secondAttribute="bottom" constant="10" id="ZVh-ip-jVm"/>
+                                                    <constraint firstItem="lJj-RU-2KX" firstAttribute="top" secondItem="y8B-jE-RUt" secondAttribute="top" constant="10" id="u8p-4M-8o1"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="y8B-jE-RUt" firstAttribute="top" secondItem="iaH-HD-f4f" secondAttribute="bottom" constant="20" id="8hk-fB-ax5"/>
+                                            <constraint firstAttribute="trailing" secondItem="y8B-jE-RUt" secondAttribute="trailing" constant="14" id="GgZ-7O-cQR"/>
+                                            <constraint firstItem="iaH-HD-f4f" firstAttribute="centerY" secondItem="WHP-pB-Ll3" secondAttribute="centerY" multiplier="2.25" id="IMp-Ug-gam"/>
+                                            <constraint firstAttribute="trailing" secondItem="iaH-HD-f4f" secondAttribute="trailing" id="IVu-Al-U7G"/>
+                                            <constraint firstItem="WHP-pB-Ll3" firstAttribute="top" secondItem="Kzv-ae-RPI" secondAttribute="top" id="KgP-nM-N7Y"/>
+                                            <constraint firstItem="WHP-pB-Ll3" firstAttribute="leading" secondItem="Kzv-ae-RPI" secondAttribute="leading" id="SPh-9i-S1p"/>
+                                            <constraint firstAttribute="trailing" secondItem="WHP-pB-Ll3" secondAttribute="trailing" id="fmG-DX-2Il"/>
+                                            <constraint firstItem="y8B-jE-RUt" firstAttribute="leading" secondItem="Kzv-ae-RPI" secondAttribute="leading" constant="14" id="gKg-EL-EUV"/>
+                                            <constraint firstAttribute="bottom" secondItem="y8B-jE-RUt" secondAttribute="bottom" constant="30" id="iva-8t-UUI"/>
+                                            <constraint firstItem="iaH-HD-f4f" firstAttribute="leading" secondItem="Kzv-ae-RPI" secondAttribute="leading" id="jXs-kO-Yza"/>
+                                            <constraint firstItem="iaH-HD-f4f" firstAttribute="centerX" secondItem="WHP-pB-Ll3" secondAttribute="centerX" id="v7v-5a-InW"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Kzv-ae-RPI" firstAttribute="leading" secondItem="kKN-SW-7VJ" secondAttribute="leading" id="0UO-hP-5an"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kzv-ae-RPI" secondAttribute="trailing" id="G1l-OD-BYn"/>
+                                    <constraint firstItem="Kzv-ae-RPI" firstAttribute="top" secondItem="kKN-SW-7VJ" secondAttribute="top" id="LwP-YI-7Q8"/>
+                                    <constraint firstItem="Kzv-ae-RPI" firstAttribute="width" secondItem="kKN-SW-7VJ" secondAttribute="width" id="POo-gY-hvH"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kzv-ae-RPI" secondAttribute="bottom" id="Y3z-Fd-5bN"/>
+                                    <constraint firstItem="Kzv-ae-RPI" firstAttribute="height" secondItem="kKN-SW-7VJ" secondAttribute="height" priority="250" id="lJf-c1-O4i"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lJj-RU-2KX" firstAttribute="centerX" secondItem="dmK-7Y-aUE" secondAttribute="centerX" id="KfV-vd-AwU"/>
-                            <constraint firstItem="lJj-RU-2KX" firstAttribute="centerY" secondItem="dmK-7Y-aUE" secondAttribute="centerY" id="lQv-xq-JjM"/>
+                            <constraint firstItem="kKN-SW-7VJ" firstAttribute="leading" secondItem="1Cz-x8-1l7" secondAttribute="leading" id="GMK-rD-hNO"/>
+                            <constraint firstItem="1Cz-x8-1l7" firstAttribute="bottom" secondItem="kKN-SW-7VJ" secondAttribute="bottom" id="KFH-QY-cdb"/>
+                            <constraint firstItem="kKN-SW-7VJ" firstAttribute="top" secondItem="1Cz-x8-1l7" secondAttribute="top" id="g2B-tK-gT3"/>
+                            <constraint firstItem="kKN-SW-7VJ" firstAttribute="trailing" secondItem="1Cz-x8-1l7" secondAttribute="trailing" id="tvo-aM-ytv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Cz-x8-1l7"/>
                         <connections>
@@ -106,12 +254,11 @@
                             <outlet property="genreLbl" destination="2yz-31-nZ9" id="XDX-CD-A0Z"/>
                             <outlet property="imdbRatingLbl" destination="H6n-xp-TXC" id="nJ5-sa-bpj"/>
                             <outlet property="languageLbl" destination="eha-eI-4yg" id="Iil-2r-jii"/>
-                            <outlet property="plotLbl" destination="EUv-Lk-GTc" id="yST-xy-4h8"/>
                             <outlet property="posterImageView" destination="WHP-pB-Ll3" id="rHe-9R-wbN"/>
-                            <outlet property="releasedLbl" destination="5Ta-L3-CiD" id="1sB-Gj-F5l"/>
+                            <outlet property="releasedLbl" destination="NEb-V2-vJ7" id="8yn-vH-GII"/>
                             <outlet property="runtimeLbl" destination="yLZ-4C-Aof" id="QwM-sy-xa1"/>
-                            <outlet property="titleLbl" destination="bMz-n7-mTn" id="jJs-nT-aNP"/>
-                            <outlet property="writerLbl" destination="Y5b-gu-OPX" id="096-Vg-Kjr"/>
+                            <outlet property="smallImageView" destination="V2f-dl-9g9" id="bB6-Z7-fub"/>
+                            <outlet property="titleLbl" destination="YhD-Yr-jVO" id="WM6-Jf-YMn"/>
                         </connections>
                     </view>
                     <connections>

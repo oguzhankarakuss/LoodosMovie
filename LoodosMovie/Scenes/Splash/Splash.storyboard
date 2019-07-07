@@ -14,25 +14,45 @@
         <scene sceneID="1pc-YG-tkW">
             <objects>
                 <viewController storyboardIdentifier="SplashViewController" id="Y2X-XZ-mgh" customClass="SplashViewController" customModule="LoodosMovie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gE3-2u-upq">
+                    <view key="view" contentMode="scaleToFill" id="gE3-2u-upq" customClass="SplashView" customModule="LoodosMovie" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Splash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmf-eZ-pyy">
-                                <rect key="frame" x="163" y="430" width="88" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="TSA-DD-9ZP">
+                                <rect key="frame" x="122" y="338" width="170.5" height="220.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popcorn" translatesAutoresizingMaskIntoConstraints="NO" id="pyT-Ds-1eD">
+                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="170.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOODOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmf-eZ-pyy">
+                                        <rect key="frame" x="24.5" y="184.5" width="121.5" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.75294117650000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TSA-DD-9ZP" firstAttribute="centerY" secondItem="gE3-2u-upq" secondAttribute="centerY" id="1yi-55-UVZ"/>
+                            <constraint firstItem="TSA-DD-9ZP" firstAttribute="centerX" secondItem="gE3-2u-upq" secondAttribute="centerX" id="DC2-CX-tVy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hzN-Gu-AZ6"/>
+                        <connections>
+                            <outlet property="splashText" destination="Gmf-eZ-pyy" id="eR9-KW-3Rg"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="customView" destination="gE3-2u-upq" id="Ziy-G5-p2H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvK-Sf-ZLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="82"/>
+            <point key="canvasLocation" x="63.768115942028992" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="popcorn" width="170.5" height="170.5"/>
+    </resources>
 </document>

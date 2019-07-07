@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>351850007873-0gu16a1c0m3254gsfk56u35917m8d55i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.351850007873-0gu16a1c0m3254gsfk56u35917m8d55i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDYw-DfGywiORo2vTbA6HV4GAXqgYI7TZQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>351850007873</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.oguzhan.LoodosMovie</string>
+	<key>PROJECT_ID</key>
+	<string>loodosmovie</string>
+	<key>STORAGE_BUCKET</key>
+	<string>loodosmovie.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:351850007873:ios:2e795187256c9f97</string>
+	<key>DATABASE_URL</key>
+	<string>https://loodosmovie.firebaseio.com</string>
+</dict>
+</plist>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RevealingSplashView
 
 final class MovieListViewController: UIViewController{
     
