@@ -8,8 +8,9 @@
 
 import UIKit
 import Firebase
+import NVActivityIndicatorView
 
-final class MovieDetailViewController: UIViewController{
+final class MovieDetailViewController: UIViewController, NVActivityIndicatorViewable{
     
     @IBOutlet var customView: MovieDetailView!
     var movieTitle: String?
@@ -18,14 +19,13 @@ final class MovieDetailViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = movieTitle
         movieDetailRequest()
-
     }
     
     func movieDetailRequest(){
         customView.setLoading(true)
+        startAnimating()
         service.fetchMovieDetail(movieTitle: movieTitle!){ [weak self] result in
             guard let self = self else { return }
             
@@ -38,6 +38,7 @@ final class MovieDetailViewController: UIViewController{
                 print(error)
             }
             self.customView.setLoading(false)
+            self.stopAnimating()
         }
     }
     

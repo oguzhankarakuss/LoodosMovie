@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import RevealingSplashView
+import NVActivityIndicatorView
 
-final class MovieListViewController: UIViewController{
+final class MovieListViewController: UIViewController, NVActivityIndicatorViewable{
     
     @IBOutlet weak var customView: MovieListView!{
         didSet{
@@ -24,6 +24,7 @@ final class MovieListViewController: UIViewController{
         self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.hidesBackButton = true
         title = "Movie Search"
+
     }
     
 }
@@ -35,6 +36,9 @@ extension MovieListViewController: MovieListViewDelegate{
     }
     
     func sendRequest(at searchName: String, page: Int) {
+        if page < 2{
+            startAnimating(message: "Loodos")
+        }
         customView.setLoading(true)
         service.fetchMovies(searchName: searchName, page: page){ [weak self] result in
             guard let self = self else { return }
@@ -49,6 +53,7 @@ extension MovieListViewController: MovieListViewDelegate{
                 // TODO: Sonuç bulunamadı uyarısı verilecek
             }
             self.customView.setLoading(false)
+            self.stopAnimating()
             }
     }
 }

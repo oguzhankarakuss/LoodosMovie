@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import NVActivityIndicatorView
 
 final class MovieListView: UIView{
     
@@ -20,6 +21,9 @@ final class MovieListView: UIView{
     private var page = 1
     
     @IBAction private func searchButtonTapped(_ sender: UIButton){
+        page = 1
+        movieList = []
+        totalResults = 0
         loadTable()
     }
     

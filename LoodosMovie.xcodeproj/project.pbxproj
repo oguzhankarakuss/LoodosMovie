@@ -36,7 +36,6 @@
 		33CB6F0422D210E600A76E0C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F0322D210E600A76E0C /* SplashView.swift */; };
 		33CB6F0622D2117200A76E0C /* SplashContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F0522D2117200A76E0C /* SplashContracts.swift */; };
 		33CB6F0822D221BF00A76E0C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CB6F0722D221BF00A76E0C /* AdSupport.framework */; };
-		33CB6F0B22D25A2D00A76E0C /* InfinitySymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F0A22D25A2D00A76E0C /* InfinitySymbolView.swift */; };
 		33CB6F0F22D2844100A76E0C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F0E22D2844100A76E0C /* UIView+Extension.swift */; };
 		33CB6F1122D2857400A76E0C /* UIColor+HexRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB6F1022D2857400A76E0C /* UIColor+HexRGB.swift */; };
 		33CB6F1322D28A1900A76E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CB6F1222D28A1900A76E0C /* Assets.xcassets */; };
@@ -77,7 +76,6 @@
 		33CB6F0322D210E600A76E0C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		33CB6F0522D2117200A76E0C /* SplashContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContracts.swift; sourceTree = "<group>"; };
 		33CB6F0722D221BF00A76E0C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		33CB6F0A22D25A2D00A76E0C /* InfinitySymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitySymbolView.swift; sourceTree = "<group>"; };
 		33CB6F0E22D2844100A76E0C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		33CB6F1022D2857400A76E0C /* UIColor+HexRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexRGB.swift"; sourceTree = "<group>"; };
 		33CB6F1222D28A1900A76E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
@@ -135,7 +133,7 @@
 				3338CB7122CE821800DB76C1 /* App */,
 				3338CB7322CE827500DB76C1 /* Scenes */,
 				3338CB6622CE6C7E00DB76C1 /* Resources */,
-				33CB6F0D22D283BB00A76E0C /* Extensions */,
+				33CB6F1622D2C00800A76E0C /* Utils */,
 				3338CB7222CE824A00DB76C1 /* Supporting Files */,
 				3338CB6722CE6CAF00DB76C1 /* OMDBApi */,
 			);
@@ -215,7 +213,6 @@
 				33CB6EFA22D1545800A76E0C /* SpashBuilder.swift */,
 				33CB6EF622D1535C00A76E0C /* Splash.storyboard */,
 				33CB6F0522D2117200A76E0C /* SplashContracts.swift */,
-				33CB6F0A22D25A2D00A76E0C /* InfinitySymbolView.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -252,9 +249,17 @@
 			children = (
 				33CB6F0E22D2844100A76E0C /* UIView+Extension.swift */,
 				33CB6F1022D2857400A76E0C /* UIColor+HexRGB.swift */,
-				33CB6F1422D2984800A76E0C /* CustomLabel.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		33CB6F1622D2C00800A76E0C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				33CB6F1422D2984800A76E0C /* CustomLabel.swift */,
+				33CB6F0D22D283BB00A76E0C /* Extensions */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		71E9AA2026DE402FAF6149AB /* Pods */ = {
@@ -354,6 +359,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
@@ -366,6 +372,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
@@ -414,7 +421,6 @@
 				3338CB8922D0B05C00DB76C1 /* MovieListBuilder.swift in Sources */,
 				33CB6F1122D2857400A76E0C /* UIColor+HexRGB.swift in Sources */,
 				3338CB9622D0CCC700DB76C1 /* MovieDetailBuilder.swift in Sources */,
-				33CB6F0B22D25A2D00A76E0C /* InfinitySymbolView.swift in Sources */,
 				3338CB9822D0E5DE00DB76C1 /* Helper.swift in Sources */,
 				3338CB7D22CE916700DB76C1 /* MovieListViewController.swift in Sources */,
 				3338CB8522D0ADFF00DB76C1 /* AppContainer.swift in Sources */,
