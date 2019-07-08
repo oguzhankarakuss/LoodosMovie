@@ -12,6 +12,8 @@ extension UIColor {
     
     static let firstColor = UIColor(hex: 0x8E0E00)
     static let secondColor = UIColor(hex: 0x1F1C18)
+    static let backgroundColor = UIColor(hex: 0x121212)
+    static let textColor = UIColor(hex: 0xFFFFFF, a: 0.6)
     
     
     // Create a UIColor from RGB

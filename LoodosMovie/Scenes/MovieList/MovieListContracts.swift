@@ -17,4 +17,5 @@ protocol MovieListViewProtocol {
 protocol MovieListViewDelegate: class {
     func didSelectMovie(at movieTitle: String)
     func sendRequest(at searchName: String, page: Int)
+    func didScroll(at isScroll: Bool)
 }

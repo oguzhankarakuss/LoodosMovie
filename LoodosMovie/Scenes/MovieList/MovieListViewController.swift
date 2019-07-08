@@ -24,12 +24,16 @@ final class MovieListViewController: UIViewController, NVActivityIndicatorViewab
         self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.hidesBackButton = true
         title = "Movie Search"
-
+        
     }
     
 }
 
 extension MovieListViewController: MovieListViewDelegate{
+    func didScroll(at isScroll: Bool) {
+        customView.endEditing(isScroll)
+    }
+    
     func didSelectMovie(at movieTitle: String) {
         let movieDetailViewController = MovieDetailBuilder.make(with: movieTitle)
         show(movieDetailViewController, sender: nil)
@@ -54,6 +58,6 @@ extension MovieListViewController: MovieListViewDelegate{
             }
             self.customView.setLoading(false)
             self.stopAnimating()
-            }
+        }
     }
 }

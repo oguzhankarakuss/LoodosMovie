@@ -9,18 +9,18 @@
 import Foundation
 
 struct MovieDetailPresentation {
-     let title: String
-     let released: String
-     let genre: String
-     let actors: String
-     let plot: String
-     let language: String
-     let country: String
-     let imdbRating: String
-     let director: String
-     let writer: String
-     let runtime: String
-     let image: URL
+    let title: String
+    let released: String
+    let genre: String
+    let actors: String
+    let plot: String
+    let language: String
+    let country: String
+    let imdbRating: String
+    let director: String
+    let writer: String
+    let runtime: String
+    let image: URL
 }
 
 extension MovieDetailPresentation{

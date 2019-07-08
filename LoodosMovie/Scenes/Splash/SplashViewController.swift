@@ -21,7 +21,6 @@ final class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        customView.setGradientBackground(colorOne: .firstColor, colorTwo: .secondColor)
         self.navigationController?.navigationBar.isHidden = true
         checkNetworkConnection()
         fetchRC()
@@ -33,7 +32,11 @@ final class SplashViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline:.now() + 3.0){
             if self.reachability.connection != .none {
                 //TODO: open
-                self.revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "popcorn")!, iconInitialSize: CGSize(width: 170, height: 170), backgroundImage: UIImage(named: "phoenix-start")!)
+                let iv = UIImageView()
+                let icon = UIImage(named: "splash")?.withRenderingMode(.alwaysTemplate)
+                iv.image = icon
+                iv.tintColor = UIColor(hex: 0xFFFFFF, a: 0.8)
+                self.revealingSplashView = RevealingSplashView(iconImage: iv.image!, iconInitialSize: CGSize(width: 170, height: 170), backgroundColor: .backgroundColor)
                 self.view.addSubview(self.revealingSplashView!)
                 self.revealingSplashView?.playTwitterAnimation {
                     self.revealingSplashView?.startAnimation()

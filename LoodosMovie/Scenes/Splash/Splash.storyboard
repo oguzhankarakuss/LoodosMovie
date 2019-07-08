@@ -19,27 +19,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="TSA-DD-9ZP">
-                                <rect key="frame" x="122" y="338" width="170.5" height="220.5"/>
+                                <rect key="frame" x="116" y="321" width="182.5" height="254.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popcorn" translatesAutoresizingMaskIntoConstraints="NO" id="pyT-Ds-1eD">
-                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="170.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="pyT-Ds-1eD">
+                                        <rect key="frame" x="6" y="0.0" width="170.5" height="170.5"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.60110766270000004" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOODOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmf-eZ-pyy">
-                                        <rect key="frame" x="24.5" y="184.5" width="121.5" height="36"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <rect key="frame" x="0.0" y="184.5" width="182.5" height="70"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="50"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TSA-DD-9ZP" firstAttribute="centerY" secondItem="gE3-2u-upq" secondAttribute="centerY" id="1yi-55-UVZ"/>
                             <constraint firstItem="TSA-DD-9ZP" firstAttribute="centerX" secondItem="gE3-2u-upq" secondAttribute="centerX" id="DC2-CX-tVy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hzN-Gu-AZ6"/>
                         <connections>
+                            <outlet property="imageView" destination="pyT-Ds-1eD" id="Q2M-0h-YlV"/>
                             <outlet property="splashText" destination="Gmf-eZ-pyy" id="eR9-KW-3Rg"/>
                         </connections>
                     </view>
@@ -53,6 +55,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="popcorn" width="170.5" height="170.5"/>
+        <image name="splash" width="170.5" height="170.5"/>
     </resources>
 </document>

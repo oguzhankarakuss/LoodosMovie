@@ -14,9 +14,23 @@ final class MovieListView: UIView{
     
     weak var delegate: MovieListViewDelegate?
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet private weak var searchField: UITextField!
+    @IBOutlet private weak var messageLbl: UILabel!
+    @IBOutlet private weak var searchField: UITextField!{
+        didSet{
+            searchField.attributedPlaceholder = NSAttributedString(string: "Movie Name (Ex: Batman)",
+                                                                   attributes: [NSAttributedString.Key.foregroundColor: UIColor(hex: 0xFFFFFF, a: 0.6)])
+        }
+    }
     @IBOutlet private weak var searchBtn: UIButton!
-    private var movieList: [MoviePresentation] = []
+    private var movieList: [MoviePresentation] = []{
+        didSet{
+            if movieList.isEmpty{
+                messageLbl.isHidden = false
+            } else{
+                messageLbl.isHidden = true
+            }
+        }
+    }
     private var totalResults: Int!
     private var page = 1
     
@@ -30,6 +44,7 @@ final class MovieListView: UIView{
 }
 
 extension MovieListView: MovieListViewProtocol{
+    
     func updateMovieList(_ movieList: [MoviePresentation], totalResults: String, page: Int) {
         self.movieList.append(contentsOf: movieList)
         self.totalResults = Int(totalResults)
@@ -62,16 +77,17 @@ extension MovieListView: UITableViewDataSource{
         cell.movieImageView.kf.setImage(with: URL(string: movie.image)){ result in
             switch result{
             case .success( _):
-                    cell.activityView.stopAnimating()
+                cell.activityView.stopAnimating()
             case .failure(let error):
                 print("KF: \(error)")
                 cell.activityView.stopAnimating()
                 cell.movieImageView.image = UIImage(named: "no_img")
             }}
-
+        
         
         return cell
     }
+    
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row > movieList.count - 2 {
@@ -86,9 +102,17 @@ extension MovieListView: UITableViewDataSource{
 extension MovieListView: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelectMovie(at: movieList[indexPath.row].title)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if !tableView.isDecelerating {
+            delegate?.didScroll(at: true)
+        }
     }
 }
